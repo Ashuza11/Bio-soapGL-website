@@ -4,7 +4,7 @@
 <p>This repo houses the assets used to build the Bio seap Grand Lacs website</p>
 
 ## Tools
----
+
 <p>The website is built and developed form scratch using the html, css & javascript.</p>
 
 ## Website content

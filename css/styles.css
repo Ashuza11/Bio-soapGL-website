@@ -76,7 +76,23 @@ section{
     display: block;
     text-decoration: none;
     color: var(--black);
-    transition: 0.4s all;
+    opacity: 1;
+    position: relative;
+}
+.header .navbar a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--thirdcolor);
+    position: absolute;
+    top: -.75rem;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+.header .navbar a:hover::before {
+    transform: scale(1,1);
 }
 .header .navbar a:hover{
     color: var(--thirdcolor);
@@ -84,11 +100,7 @@ section{
 .header .navbar ul li {
     position: relative;
 }
-.header .navbar ul li:hover ul {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0px);
-}
+
 .header .navbar ul li ul {
     top: 100%;
     left: 0;
@@ -96,15 +108,12 @@ section{
     margin: 0;
     padding: 25px 0;
     background: var(--white);
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     position: absolute;
-    transform: translateY(50px);
     box-shadow: var(--box-shadow);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     z-index: 111;
-    transition: 0.4s all;
 }
 .header .navbar ul li ul li a{
     padding: 4px 10px 4px 30px;
@@ -112,11 +121,14 @@ section{
     font-size: 1.7rem;
     color: #747474
 }
+
 .header .navbar ul li ul li a:hover {
    padding-left: 45px;
+   transition: 0.3s;
 }
 
 .header .navbar ul li:hover > ul {
+    transition: 0.3s ease-in;
     display: initial;
 }
 #menu-btn {
@@ -193,8 +205,6 @@ section{
     }
     .header .navbar ul li {
         width: 100%;
-        visibility: visible;
-        opacity: 1;
     }
     .header .navbar ul li ul {
         position: relative;

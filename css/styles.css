@@ -57,7 +57,7 @@ p{
 }
 
 
-label{
+label, span{
     font-family: 'Noto Sans HK', sans-serif;
 }
 
@@ -98,10 +98,16 @@ h6{
 }
 
 
-/* Generec styles end  */
+/* generec styles end  */
 
 section{
     padding: 2rem 4%;
+}
+@keyframes FadeIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 .heading-title {
     margin-bottom: 2rem;
@@ -109,8 +115,25 @@ section{
 	font-weight: 900;
     font-family:'Muli',sans-serif;
     font-size: 42px;
+    text-transform: none;
 }
-
+.btn {
+    display: inline-block;
+    background: var(--main-color);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    font-family: Muli,sans-serif;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: .3s ease-in;
+    text-transform: none;
+}
+.btn:hover {
+    background: var(--black);
+}
+/* generic section end */
 
 .header {
     position: sticky;
@@ -200,6 +223,82 @@ section{
     padding: 8px 16px 8px;
     display: none;
 }
+/* home style  */
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 82rem;
+}
+.home .slide .content {
+    width: 85rem;
+    display: none;
+}
+.home .swiper-slide-active .content {
+    display: inline-block;
+}
+.home .swiper-button-next,
+.home .swiper-button-prev{
+   top:inherit;
+   left: inherit;
+   bottom: 0;
+   right: 0;
+   height: 7rem;
+   width: 7rem;
+   background: var(--white);
+   color:var(--black);
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+   background: var(--main-color);
+   color:var(--white);
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+   font-size: 2rem;
+}
+
+.home .swiper-button-prev{
+   right: inherit;
+}
+
+
+.home .slide .content span {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-bg);
+    padding-bottom: 1rem;
+    animation: FadeIn .2s linear backwards .2s;
+}
+.home .slide .content h1 {
+    font-size: 6vh;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+    animation: FadeIn .2s linear backwards .4s;
+}
+.home .slide .content .btn {
+    padding: 1.5rem 3.5rem;
+    animation: FadeIn .2s linear backwards .6s;
+}
+
+
+
+
+/* home style  end */
+
+
 
 /* services section  */
 .first-service {
@@ -219,12 +318,15 @@ section{
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 100px;
     padding-bottom: 30px;
+    text-transform: none;
 }
 .services .section-header .description {
     font-weight: 400;
     font-size: 20px;
     color: var(--text-color);
     line-height: 30px;
+    text-transform: none;
+    width: 110rem;
 }
 .services .box-container .box {
     background-color: var(--white);
@@ -239,26 +341,17 @@ section{
 .services .box-container .box h2 {
     font-size: 3rem;
     padding-bottom: 2rem;
+    text-transform: none;
 }
 .services .box-container .box h4{
     font-size: 1.8rem;
     padding-bottom: 2rem;
     color: var(--text-color);
     font-weight: 300;
+    text-transform: none;
 }
-.services .box-container .box .btn {
-    font-family: Muli,sans-serif;
-    font-size: 15px;
-    line-height: 2em;
-    font-weight: 600;
-    padding: 13px 28px 15px 27px;
-    background-color: var(--main-color);
-    color: var(--white);
-}
-.services .box-container .box .btn:hover {
-    color: var(--thirdcolor);
-    cursor: pointer;
-}
+
+
 
 
 
@@ -366,10 +459,9 @@ section{
     section{
        padding:3rem 2rem;
     }
-    /* .home .slide .content h3{
-       font-size: 10vw;
+    .home .slide .content h1 {
+        font-size: 10vw;
     }
-  */
     .header img {
         width: 190px;
         height: auto;

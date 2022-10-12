@@ -235,7 +235,7 @@ section{
     justify-content: center;
     background-size: cover !important;
     background-position: center !important;
-    min-height: 82rem;
+    min-height: 88vh;
 }
 .home .slide .content {
     width: 95rem;

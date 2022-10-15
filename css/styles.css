@@ -503,8 +503,115 @@ input[type="url"], textarea {
 
 
 /* history section style start */
+.our-history .box-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 5rem;
+}
+.our-history h1 {
+    padding: 122px 0px 33px 20px;
+}
 
+.our-history .box-container .box-up {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.our-history .box-container .box-up .box {
+    background: var(--white);
+    max-width: 45rem;
+    height: 40rem;
+}
+.our-history .box-up .img {
+    height: 25rem;
+    overflow: hidden;
+}
+.our-history .box-up img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition: .2s linear;
+}
+.our-history .box-container .box-up .contents {
+    padding: 0 7rem 0 7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    gap: 3rem;
+}
+.our-history .box-container .box-up .contents h3 {
+    font-family: Muli,sans-serif;
+    font-size: 32px;
+    line-height: 1.1em;
+    padding-bottom: 1rem;
+}
 
+.our-history .box-container .box-up .contents a, p {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding-right: .5rem;
+    line-height: 1.9rem;
+    cursor: pointer;
+    display: block;
+}
+.our-history .box-container .box-up .contents .btn-box {
+    margin-right: 15rem;
+    color: var(--white);
+}
+.our-history .box-container .box-up .contents i {
+    color: var(--thirdcolor);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+.our-history .box-container .box-down {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 102px 0px 120px 0px;
+}
+.our-history .box-container .box-down .box{
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    max-width: 620px;
+    height: 340px;
+}
+.our-history .box-container .box-down .contents {
+    padding: 8rem 10rem 8rem 10rem;
+}
+.our-history .box-container .box-down .contents  h3{
+    padding-bottom: 3rem;
+}
+.our-history .box-container .box-down .contents a {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    padding-right: .5rem;
+    line-height: 1.9rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    display: block;
+}
+.our-history .box-container .box-down .contents .btn-box {
+    margin-right: 25rem;
+    color: var(--white);
+}
+.our-history .box-container .box-down .contents i {
+    color: var(--thirdcolor);
+    padding-right: .5rem;
+    transition: .2s linear;
+    font-size: 2rem;
+}
 /* history section end  */
 
 

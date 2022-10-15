@@ -24,7 +24,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
  }
  
 html{
@@ -51,14 +50,16 @@ body {
 
 h1 h2, h3, h4, h5, h6, strong{
     font-family: 'Muli', sans-serif;
+    text-transform: none;
 }
 p{
 	font-family: "Roboto", Sans-serif;
+    text-transform: none;
 }
 
 
 label, span{
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 textarea{
@@ -353,14 +354,14 @@ section{
 
 
 /* pactener styles */
-.partener{
+.partener {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 8rem 8rem;
 }
 .partener .images {
-    flex: 1 1 25rem;
+    flex: 1 1 41rem;
     background: var(--white);
     padding: 8rem;
     box-shadow: var(--box-shadow);
@@ -379,7 +380,6 @@ section{
     font-family: 'Muli', sans-serif;
     font-size: 3rem;
     text-transform: none;
-    word-wrap: break-word;
 }
 .partener .content p {
     font-size: 1.7rem;
@@ -400,6 +400,112 @@ section{
     padding: 1.5rem 1.5rem;
 }
 /* pactener style end */
+
+
+/* contact start  */
+.partener .contact-content {
+    flex: 1 1 30rem;
+    padding: 3rem;
+    padding: 5rem 8rem 5rem 8rem;
+}
+.partener .contact-content h3 {
+    font-size: 4rem;
+    word-break: break-all;
+    text-transform: none;
+}
+.partener .contact-content p {
+    padding-top: 15px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.35em;
+    text-transform: none;
+    color: #747474;
+}
+.partener .contact-content p span {
+    text-transform: uppercase;
+}
+.partener .contact-form {
+    flex: 1 1 30rem;
+    padding: 12rem 8rem 12rem 8rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+}
+.partener .contact-form legend {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.partener .contact-form fieldset {
+    width: 100%;
+}
+.partener .contact-form legend h5 {
+    font-family: Muli,sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.1em;
+    margin: 25px 0;
+    text-transform: none;
+    word-wrap: break-word;
+}
+.partener .contact-form legend p {
+    padding-top: 5px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.35em;
+    color: #747474;
+}
+.partener .contact-form .form-group input[type="email"], input[type="number"], 
+input[type="password"], input[type="tel"], input[type="text"],
+input[type="url"], textarea {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        margin: 0 0 35px;
+        padding: 8px 0;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: .045em;
+        font-weight: 400;
+        color: #939393;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #dcdcdc;
+        border-radius: 0;
+        outline: 0;
+        cursor: text;
+        -webkit-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+        -o-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+        transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    }
+.partener .contact-form .form-group input[type="email"]:focus, input[type="number"]:focus, 
+    input[type="password"]:focus, input[type="tel"]:focus, input[type="text"]:focus, textarea:focus {
+        color: var(--thirdcolor);
+}
+.partener .contact-form .form-group .check-box-info {
+    padding-bottom: 2rem;
+}
+.partener .contact-form .form-group .check-box-info input {
+    margin: .3rem;
+}
+.partener .contact-form .form-group .check-box-info label {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #202E45;
+    text-transform: none;
+}
+.partener .contact-form .form-group .message {
+    padding: 1.5rem 2.5rem;
+}
+    
+/* contact end  */
+
+
+/* history section style start */
+
+
+/* history section end  */
 
 
 /* Footer styles  */

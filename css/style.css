@@ -884,7 +884,8 @@ input[type="url"], textarea {
       padding: 4rem;
    }
    .services .box-container .box .phone_none {
-      display: none;
+      font-size: 1.5rem;
+      padding: .5rem 2rem;
    }
    .heading-title{
       font-size: 3.5rem;

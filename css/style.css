@@ -883,6 +883,9 @@ input[type="url"], textarea {
    .home-about .image{
       padding: 4rem;
    }
+   .services .box-container .box .phone_none {
+      display: none;
+   }
    .heading-title{
       font-size: 3.5rem;
    }

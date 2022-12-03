@@ -30,9 +30,9 @@
    </a>
    <nav class="navbar" role="navigation"> 
       <ul>
-          <li><a href="#">A propos <i class="fas fa-caret-down"></i></a>
+          <li><a href="./about/about.html" target="_blank">A propos <i class="fas fa-caret-down"></i></a>
               <ul>
-                  <li><a href="#">Présentation</a></li>
+                  <li><a href="./about/about.html">Présentation</a></li>
                   <li><a href="#">Nos Produits</a></li>
                   <li><a href="#">Notre Mission</a></li>
                   <li><a href="#">Notre Stratégie </a></li>
@@ -143,7 +143,7 @@
             <h3>Une vision éco-systémique de la création de valeur</h3>
             <p>
                Pour atteindre ses objectifs et proposer des prestations 
-               complètes et abouties,BIO SOAP Grand-Lacs s’entoure d’un écosystème 
+               complètes et abouties, BIO SOAP Grand-Lacs s'entoure d'un écosystème 
             </p>
             <a href="#" class="btn">En savoir plus</a>
          </div>
@@ -194,13 +194,45 @@
 <section class="home-about home-about-1">
 
    <div class="image">
-      <img src="images/about-img.jpg" alt="">
+      <form action="">
+         <legend>
+             <h3>Discutons ensemble</h3>
+             <p>
+                 N'hésitez pas à prendre contact avec nous pour toutes questions ou demande.
+                 Nous serons ravis de vous répondre.
+             </p>
+         </legend>
+         <fieldset>
+             <div class="form-group">
+                 <input type="text" name="fname" value="" placeholder="Votre nom:">
+             </div>
+             <div class="form-group">
+                 <input type="text" name="fname" value="" placeholder="Votre address mail:">
+             </div>
+             <div class="form-group">
+                 <textarea name="question" rows="1" cols="40" placeholder="Que souhaitez-vous nous dire ?"></textarea>
+             </div>
+             <div class="form-group">
+                 <div class="check-box-info">
+                     <input type="checkbox"  name="condition" value="">
+                     <label for="message">
+                         En soumettant ce formulaire, j'accepte que les informations saisies soient
+                         exploitées dans le cadre de ma demande d'informations et de la relation
+                         commerciale qui peut en découler. En aucun cas vos données ne seront
+                         transmises à des tiers.
+                     </label>
+                 </div>
+                 <input class="btn " type="submit" value="Envoyer mon message">
+             </div>
+         </fieldset>
+      </form>
    </div>
-
-   <div class="content">
-      <h3>about us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
-      <a href="about.php" class="btn">read more</a>
+   <div class="content content-1">
+      <h3>La réussite de votre projet industriel</h3>
+      <p>Particuliers, TPE/PME ou grandes entreprises, 
+         choisir <span> BIO SOAP Grand-Lacs</span> c'est faire le choix de l'agilité et la disponibilité d'une petite entreprise, 
+         combinées à la diversité d'expertises et le sérieux qu'offrent les grandes structures.</p>
+      <a href="#" class="btn">En savoir plus</a>
    </div>
 
 </section>
@@ -208,41 +240,45 @@
 <!-- home about section ends -->
 
 <!-- sevices section ends -->
-<section class="services services-1">
+<section class="services">
 
-   <h1 class="heading-title"> Des solutions adaptées à vos besoins </h1>
+   <h1 class="heading-title">Notre histoire, notre présent et nos horizons</h1>
 
 <div class="box-container">
 
    <div class="box">
-      <img src="img/icon-1.svg" alt="">
-      <h3>Une intelligence produit, service et procédé</h3>
+      <h3>La genèse</h3>
       <p>
-         Développer un produit, c’est également le connaitre 
-         suffisamment, à tous les instants de son cycle de vie, afin de pouvoir 
-         le rendre 
+         BIO SOAP Grand-Lacs est né suite à un problème identifiés préalablement sur terrain par notre équipe après une étude de base
       </p>
       <a href="#" class="btn">En savoir plus</a>
    </div>
-
-   <div class="box">
-      <img src="img/icon-2.svg" alt="">
-      <h3>Une vision éco-systémique de la création de valeur</h3>
-      <p>
-         Pour atteindre ses objectifs et proposer des prestations 
-         complètes et abouties,BIO SOAP Grand-Lacs s’entoure d’un écosystème 
-      </p>
-      <a href="#" class="btn">En savoir plus</a>
+   <div class="box image">
+      <img src="img/image-9.jpg" alt="">
    </div>
-
+   <div class="box image">
+      <img src="img/expertise.jpg" alt="">
+   </div>
    <div class="box">
-      <img src="img/icon-3.png" alt="">
-      <h3>Une culture de l'apprentissage continu</h3>
-      <p>
-         Pour donner continuellement de la valeur et maintenir en performance 
-         les solutions de nos clients, nous nous inscrivons dans une démarche 
-      </p>
-      <a href="#" class="btn">En savoir plus</a>
+      <h3>Notre expertises</h3>
+      <div class="expertise">
+         <div>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span>Développement de produits</span>
+         </div>
+         <div>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span>Développement de procédé</span>
+         </div>
+         <div>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span>Développement de services associés ou non à un produit ou un procédé</span>
+         </div>
+         <div>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span>Développement de produits ou procédés avec servitisation</span>
+         </div>
+      </div>
    </div>
 
 </div>
@@ -255,9 +291,10 @@
 
 <section class="home-offer">
    <div class="content">
-      <h3>upto 50% off</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
-      <a href="book.php" class="btn">book now</a>
+      <h3>Où sommes - nous ?</h3>
+      <p><i class="fas fa-map-marker"></i>Quartier Kyeshero , Avenue de la conférence, numéro
+         79, première étage</p>
+      <a href="#" class="btn">Nous contacter</a>
    </div>
 </section>
 
@@ -286,31 +323,32 @@
    <div class="box-container">
 
       <div class="box">
-         <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
-         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+         <img src="img/logo2.svg" alt="">
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="#"> <i class="fas fa-angle-right"></i>Notre Stratégie</a>
+         <a href="#"> <i class="fas fa-angle-right"></i>Nos parteners</a>
+         <a href="#"> <i class="fas fa-angle-right"></i>contacter nous</a>
+         <a href="#"> <i class="fas fa-angle-right"></i>Notre histoire</a>
       </div>
 
       <div class="box">
-         <h3>extra links</h3>
-         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <h3>Plus d'informations</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i>Politiquede confidentialité</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> Politique sur les cookies</a>
          <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> Mentions légalese</a>
       </div>
 
       <div class="box">
-         <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
+         <h3>Nous contacter</h3>
+         <a href="#"> <i class="fas fa-phone"></i> 00243972361585</a>
+         <a href="#"> <i class="fas fa-phone"></i> +243979363803 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> contact@BioSoapgrand-lacs</a>
+         <a href="#"> <i class="fas fa-map"></i>Kyeshero, Avenue de la conférence - 0125</a>
       </div>
 
       <div class="box">
-         <h3>follow us</h3>
+         <h3>Suivez-nous</h3>
          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
@@ -319,7 +357,7 @@
 
    </div>
 
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+   <div class="credit"> 2022 Tous droits réservés &copy;BIO SOAP Grand-Lacs <br> Une réalisation de <span><a href="https://ash-dev.netlify.app/" target="_blank">M. Ashuza</a></span></div>
 
 </section>
 

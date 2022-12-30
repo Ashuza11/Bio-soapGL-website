@@ -562,6 +562,7 @@ input[type="url"], textarea {
    color: var(--main-color);
 }
 
+/* ================================================ */
 .about{
    display: flex;
    align-items: center;
@@ -770,13 +771,68 @@ input[type="url"], textarea {
    margin-top: 2rem;
 }
 
+/* =========================================== */
 
+.team .box-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.team .box-container .box {
+   height: 400px;
+   width: 280px;
+   border: 8px solid #fff;
+   box-shadow: 0 5px 5px #000;
+   overflow: hidden;
+   margin: 20px 15px;
+}
+.team .box-container .box img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   filter: grayscale();
+}
+.team .box-container .box:hover img {
+   filter: grayscale(0%);
+   transform: scale(1.1);
+}
 
+.team .box-container .box .info {
+   text-align: center;
+   background-color: #fff;
+   position: relative;
+   bottom: 40px;
+}
+.team .box-container .box:hover .info {
+   bottom: 128px;
+}
 
+.team .box-container .box .info .title {
+   padding: 10px 0;
+   font-size: 18px;
+   color: #333;
+   text-transform: capitalize;
+}
+.team .box-container .box .info .post {
+   font-size: 12px;
+   color: #999;
+   text-transform: capitalize;
+}
 
-
-
-
+.team .box-container .box .info .share {
+   margin-top: 10px;
+   border-top: 1px dotted #747474;
+}
+.team .box-container .box .info .share a{
+   font-size: 20px;
+   margin: 20px 10px;
+   text-decoration: none;
+   color: #333;
+}
+.team .box-container .box .info .share a:hover{
+   color: #999;
+}
 
 
 .footer{

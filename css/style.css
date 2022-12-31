@@ -668,109 +668,6 @@ input[type="url"], textarea {
    margin-top: 1rem;
 }
 
-.packages .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap: 2rem;
-}
-
-.packages .box-container .box{
-   border:var(--border);
-   box-shadow: var(--box-shadow);
-   background: var(--white);
-   display: none;
-}
-
-.packages .box-container .box:nth-child(1),
-.packages .box-container .box:nth-child(2),
-.packages .box-container .box:nth-child(3),
-.packages .box-container .box:nth-child(4),
-.packages .box-container .box:nth-child(5),
-.packages .box-container .box:nth-child(6){
-   display: inline-block;
-}
-
-.packages .box-container .box:hover .image img{
-   transform: scale(1.1);
-}
-
-.packages .box-container .box .image{
-   height: 25rem;
-   overflow: hidden;
-}
-
-.packages .box-container .box .image img{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   transition: .2s linear;
-}
-
-.packages .box-container .box .content{
-   padding:2rem;
-   text-align: center;
-}
-
-.packages .box-container .box .content h3{
-   font-size: 2.5rem;
-   color:var(--black);
-}
-
-.packages .box-container .box .content p{
-   font-size: 1.5rem;
-   color:var(--light-black);
-   line-height: 2;
-   padding:1rem 0;
-}
-
-.packages .load-more{
-   text-align: center;
-   margin-top: 2rem;
-}
-
-.booking .book-form{
-   padding:2rem;
-   background: var(--light-bg);
-}
-
-.booking .book-form .flex{
-   display: flex;
-   flex-wrap: wrap;
-   gap:2rem;
-}
-
-.booking .book-form .flex .inputBox{
-   flex:1 1 41rem;
-}
-
-.booking .book-form .flex .inputBox input{
-   width: 100%;
-   padding:1.2rem 1.4rem;
-   font-size: 1.6rem;
-   color:var(--light-black);
-   text-transform: none;
-   margin-top: 1.5rem;
-   border:var(--border);
-}
-
-.booking .book-form .flex .inputBox input:focus{
-   background: var(--black);
-   color:var(--white);
-}
-
-.booking .book-form .flex .inputBox input:focus::placeholder{
-   color:var(--light-white);
-}
-
-.booking .book-form .flex .inputBox span{
-   font-size: 1.5rem;
-   color:var(--light-black);
-}
-
-.booking .book-form .btn{
-   margin-top: 2rem;
-}
-
 /* =========================================== */
 
 .team .box-container {
@@ -833,7 +730,31 @@ input[type="url"], textarea {
 .team .box-container .box .info .share a:hover{
    color: #999;
 }
-
+.presantation .container {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+.presantation .container > * {
+   flex: 1;
+   padding: 0 1rem 0 1rem;
+}
+.presantation .container  img {
+   max-width: 100%;
+   height: auto;
+}
+.presantation .container .box .title {
+   font-size: 3rem;
+}
+.presantation .container .box .content p {
+   font-size: 1.7rem;
+   padding: 1rem 0;
+   line-height: 2;
+   color: var(--light-black);
+}
+.presantation .container .box .content .sub-title {
+   font-size: 2rem;
+}
 
 .footer{
    background: linear-gradient(#306231b7,#3062318f), url(../img/footer.jpg) no-repeat;
@@ -911,7 +832,6 @@ input[type="url"], textarea {
    section{
       padding:3rem 5%;
    }
-
 }
 
 @media (max-width:991px){
@@ -927,6 +847,7 @@ input[type="url"], textarea {
    .home .slide .content h3{
       font-size: 10vw;
    }
+   
 
 }
 
@@ -974,7 +895,6 @@ input[type="url"], textarea {
       width: 180px;
       height: auto;
   }
-
 }
 
 @media (max-width:450px){
@@ -998,5 +918,7 @@ input[type="url"], textarea {
    .footer .box-container .box h3{
       margin-top: 0;
    }
-
+   .presantation .container {
+      flex-direction: column;
+   }
 }

@@ -776,10 +776,7 @@ input[type="url"], textarea {
 }
 .presantation .container .box .content.show-more .dots {
    display: none;
- }
-
-
-
+}
 
 
 .footer{
@@ -921,6 +918,9 @@ input[type="url"], textarea {
       width: 180px;
       height: auto;
   }
+  .presantation .container {
+      flex-direction: column;
+   }
 }
 
 @media (max-width:450px){
@@ -944,7 +944,5 @@ input[type="url"], textarea {
    .footer .box-container .box h3{
       margin-top: 0;
    }
-   .presantation .container {
-      flex-direction: column;
-   }
+
 }

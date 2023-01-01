@@ -1,5 +1,7 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
+const readMoreBtn = document.querySelector('.read-more-btn');
+const text = document.querySelector(".content");
 
 menu.onclick = () =>{
    menu.classList.toggle('fa-times');
@@ -37,16 +39,26 @@ var swiper = new Swiper(".reviews-slider", {
    },
 });
 
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
-let currentItem = 3;
+// let loadMoreBtn = document.querySelector('.packages .load-more .btn');
+// let currentItem = 3;
 
-loadMoreBtn.onclick = () =>{
-   let boxes = [...document.querySelectorAll('.packages .box-container .box')];
-   for (var i = currentItem; i < currentItem + 3; i++){
-      boxes[i].style.display = 'inline-block';
-   };
-   currentItem += 3;
-   if(currentItem >= boxes.length){
-      loadMoreBtn.style.display = 'none';
+// loadMoreBtn.onclick = () =>{
+//    let boxes = [...document.querySelectorAll('.packages .box-container .box')];
+//    for (var i = currentItem; i < currentItem + 3; i++){
+//       boxes[i].style.display = 'inline-block';
+//    };
+//    currentItem += 3;
+//    if(currentItem >= boxes.length){
+//       loadMoreBtn.style.display = 'none';
+//    }
+// }
+
+readMoreBtn.addEventListener("click", (e) => {
+   text.classList.toggle("show-more");
+   if (readMoreBtn.innerText === "Lire plus") {
+     readMoreBtn.innerText = "Lire moins";
+   } else {
+     readMoreBtn.innerText = "Lire plus";
    }
-}
+ });
+ 

@@ -20,7 +20,6 @@
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
-   text-transform: capitalize;
 }
 
 html{
@@ -38,9 +37,6 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
    background-color: var(--main-color);
-}
-h1, h2, h3, h4, h5, h6, p, span, a, label, div{
-   text-transform: none;
 }
 section{
    padding:5rem 10%;
@@ -752,9 +748,39 @@ input[type="url"], textarea {
    line-height: 2;
    color: var(--light-black);
 }
+
+.presantation .container .box .content ul li {
+   font-size: 1.7rem;
+   line-height: 2;
+   padding-left: 1rem;
+   color: var(--light-black);
+}
+.presantation .container .box .content ul li i {
+   margin-left: 3rem;
+}
+.presantation .container .box .content ul li .text {
+   margin-left: 1rem;
+}
 .presantation .container .box .content .sub-title {
    font-size: 2rem;
 }
+.presantation .container .box .content  ul li span {
+   color: var(--main-color);
+}
+.presantation .container .box .content .moreText  {
+   display: none;
+   transition: 0.7s linear;
+}
+.presantation .container .box .content.show-more .moreText {
+   display: inline;
+}
+.presantation .container .box .content.show-more .dots {
+   display: none;
+ }
+
+
+
+
 
 .footer{
    background: linear-gradient(#306231b7,#3062318f), url(../img/footer.jpg) no-repeat;

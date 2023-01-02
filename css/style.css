@@ -726,10 +726,15 @@ input[type="url"], textarea {
 .team .box-container .box .info .share a:hover{
    color: #999;
 }
+
 .presantation .container {
    display: flex;
    justify-content: center;
    gap: 1rem;
+}
+.presantation h1 {
+   font-size: 3rem;
+   color: var(--black);
 }
 .presantation .container > * {
    flex: 1;
@@ -739,30 +744,26 @@ input[type="url"], textarea {
    max-width: 100%;
    height: auto;
 }
-.presantation .container .box .title {
-   font-size: 3rem;
-}
-.presantation .container .box .content p {
+.presantation .container .box .content {
    font-size: 1.7rem;
    padding: 1rem 0;
    line-height: 2;
    color: var(--light-black);
 }
 
-.presantation .container .box .content ul li {
+.presantation .container .box .content, .box, p {
    font-size: 1.7rem;
    line-height: 2;
    padding-left: 1rem;
    color: var(--light-black);
 }
-.presantation .container .box .content ul li i {
+.presantation .container .box .content ul li span {
    margin-left: 3rem;
 }
-.presantation .container .box .content ul li .text {
-   margin-left: 1rem;
-}
+
 .presantation .container .box .content .sub-title {
    font-size: 2rem;
+   color: #000;
 }
 .presantation .container .box .content  ul li span {
    color: var(--main-color);
@@ -777,6 +778,26 @@ input[type="url"], textarea {
 .presantation .container .box .content.show-more .dots {
    display: none;
 }
+/* Stategy */
+.presantation .intro  {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 1rem;
+}
+.presantation .intro > * {
+   flex: 1;
+   padding: 0 1rem 0 1rem;
+}
+.presantation .container .box  ul li .fa-li, .title {
+   color: var(--main-color);
+}
+.presantation .container .box ul li ul li {
+   margin-left: 3rem;
+}
+
+
+
 
 
 .footer{

@@ -445,6 +445,7 @@ input[type="url"], textarea {
 .home-about .image  .form-group .check-box-info {
    padding-bottom: 2rem;
 }
+
 .home-about .image  .form-group .check-box-info input {
    margin: .3rem;
    accent-color: var(--main-color);
@@ -538,7 +539,7 @@ input[type="url"], textarea {
 }
 
 .home-offer .content img{
-   width: 250px
+   width: 300px
 }
 .home-offer .content h3{
    font-size: 3.5rem;
@@ -702,19 +703,21 @@ input[type="url"], textarea {
 }
 
 .team .box-container .box .info .title {
-   padding: 10px 0;
+   padding: 5px 0;
    font-size: 18px;
    color: #333;
    text-transform: capitalize;
 }
 .team .box-container .box .info .post {
    font-size: 12px;
+   padding-bottom: 2px;
+   text-align: center;
    color: #999;
    text-transform: capitalize;
 }
 
 .team .box-container .box .info .share {
-   margin-top: 10px;
+   padding-top: 9px;
    border-top: 1px dotted #747474;
 }
 .team .box-container .box .info .share a{
@@ -728,18 +731,22 @@ input[type="url"], textarea {
 }
 
 .presantation .container {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+   gap: 1.5rem;
+}
+   /* display: flex;
    justify-content: center;
    gap: 1rem;
-}
+} */
 .presantation h1 {
    font-size: 3rem;
    color: var(--black);
 }
-.presantation .container > * {
+/* .presantation .container > * {
    flex: 1;
    padding: 0 1rem 0 1rem;
-}
+} */
 .presantation .container  img {
    max-width: 100%;
    height: auto;
@@ -751,22 +758,18 @@ input[type="url"], textarea {
    color: var(--light-black);
 }
 
-.presantation .container .box .content, .box, p {
+.presantation .container .box .content, .box ul, p {
    font-size: 1.7rem;
    line-height: 2;
-   padding-left: 1rem;
    color: var(--light-black);
 }
-.presantation .container .box .content ul li span {
-   margin-left: 3rem;
-}
-
 .presantation .container .box .content .sub-title {
    font-size: 2rem;
    color: #000;
 }
 .presantation .container .box .content  ul li span {
    color: var(--main-color);
+   margin: 0 1rem 0 1rem;
 }
 .presantation .container .box .content .moreText  {
    display: none;
@@ -789,12 +792,12 @@ input[type="url"], textarea {
    flex: 1;
    padding: 0 1rem 0 1rem;
 }
-.presantation .container .box  ul li .fa-li, .title {
+.presantation .container .box  ul li span {
    color: var(--main-color);
 }
-.presantation .container .box ul li ul li {
+/* .presantation .container .box ul li ul li {
    margin-left: 3rem;
-}
+} */
 
 
 
@@ -940,6 +943,9 @@ input[type="url"], textarea {
       height: auto;
   }
   .presantation .container {
+      flex-direction: column;
+   }
+   .presantation .intro  {
       flex-direction: column;
    }
 }

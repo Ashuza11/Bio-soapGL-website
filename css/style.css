@@ -900,6 +900,7 @@ input[type="url"], textarea {
 
    .heading h1{
       font-size: 4rem;
+      text-align: center;
    }
 
    #menu-btn{
